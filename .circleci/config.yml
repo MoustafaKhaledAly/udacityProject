@@ -29,14 +29,14 @@ jobs:
 
 
 
-      - run:
-          name: Install angular cli
-          command: |
-            npm install -g @angular/cli@latest
-      - run:
-          name: Install angular-devkit
-          command: |
-            npm install  @angular-devkit/build-angular@0.12.1 --force     
+      # - run:
+      #     name: Install angular cli
+      #     command: |
+      #       npm install -g @angular/cli@latest
+      # - run:
+      #     name: Install angular-devkit
+      #     command: |
+      #       npm install  @angular-devkit/build-angular@0.12.1 --force     
       
       - run:
           name: Install Front end Dependencies
