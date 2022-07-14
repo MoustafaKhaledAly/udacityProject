@@ -5,6 +5,7 @@ orbs:
   python: circleci/python@2.0.3
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
+  angular: okode/angular@2.0.13
 jobs:
   build:
     docker:
@@ -14,6 +15,9 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
+       dependencies:
+         pre:
+      - npm install angular-cli@latest -g
       # - run:
       #     name: Install API Dependencies
       #     command: |
