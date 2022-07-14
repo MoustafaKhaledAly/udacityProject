@@ -11,7 +11,7 @@ jobs:
       - image: "cimg/base:stable"
       - image: cimg/node:16.14.0
     steps:
-      - node/install
+      # - node/install
       - checkout
       - aws-cli/setup
       - eb/setup
