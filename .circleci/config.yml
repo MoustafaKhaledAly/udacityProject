@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Install angular-devkit
           command: |
-            npm install  @angular-devkit/build-angular@latest --force     
+            npm install  @angular-devkit/build-angular@0.12.4 --force     
       
       - run:
           name: Install Front end Dependencies
