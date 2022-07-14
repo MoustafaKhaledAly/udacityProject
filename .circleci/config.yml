@@ -14,28 +14,19 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
-
-     
       - run:
           name: Install API Dependencies
           command: |
-            npm run api:install      
+            npm run api:install
+      - run:
+          name: API Build
+          command: |
+            npm run api:build      
       - run:
           name: Deploy App
           command: |
             npm run api:deploy
-
-
-
-      # - run:
-      #     name: Install Front end Dependencies
-      #     command: |
-      #       npm run frontend:install 
-
-      # - run:
-      #     name: Deploy Front end
-      #     command: |
-      #       npm run frontend:install       
+      
 
 
 
