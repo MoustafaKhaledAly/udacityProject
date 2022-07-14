@@ -7,16 +7,16 @@ jobs:
   build:
     docker:
       - image: "cimg/base:stable"
-  - run:
-      name: Install PIP
-      command: sudo apt-get install python-pip python-dev
-  - run:
-      name: Install awscli
-      command: sudo pip install awscli  
     steps:
       - node/install
       - checkout 
       - aws-cli/setup
+       - run:
+          name: Install PIP
+          command: sudo apt-get install python-pip python-dev
+       - run:
+          name: Install awscli
+          command: sudo pip install awscli
       - run:
           name: Install API Dependencies
           command: |
