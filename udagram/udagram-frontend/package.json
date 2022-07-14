@@ -1,6 +1,9 @@
 {
   "name": "udagram-frontend",
   "version": "0.0.1",
+  "engines": {
+    "node": "16.14.0"
+  },
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
