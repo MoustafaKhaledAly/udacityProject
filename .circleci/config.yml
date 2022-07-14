@@ -8,7 +8,8 @@ orbs:
 jobs:
   build:
     docker:
-      - image: "cimg/base:stable"
+      # - image: "cimg/base:stable"
+      - image: cimg/node:16.14.0
     steps:
       - node/install
       - checkout
