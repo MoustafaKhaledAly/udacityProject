@@ -27,18 +27,7 @@ jobs:
       - run:
           name: Deploy App
           command: |
-            npm run api:deploy
-
-
-
-      # - run:
-      #     name: Install angular cli
-      #     command: |
-      #       npm install -g @angular/cli@latest
-      # - run:
-      #     name: Install angular-devkit
-      #     command: |
-      #       npm install  @angular-devkit/build-angular@0.12.1 --force     
+            npm run api:deploy   
       
       - run:
           name: Install Front end Dependencies
