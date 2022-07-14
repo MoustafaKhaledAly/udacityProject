@@ -39,7 +39,7 @@ jobs:
           command: |
             npm run api:install
       - run:
-          name: Install Front end build
+          name:  Front end build
           command: |
             npm run frontend:build 
       - run:
