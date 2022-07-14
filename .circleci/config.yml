@@ -11,10 +11,10 @@ jobs:
       - node/install
       - checkout 
       - aws-cli/setup
-       - run:
+      - run:
           name: Install PIP
           command: sudo apt-get install python-pip python-dev
-       - run:
+      - run:
           name: Install awscli
           command: sudo pip install awscli
       - run:
