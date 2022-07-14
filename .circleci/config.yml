@@ -40,18 +40,18 @@ jobs:
       #     command: |
       #       npm install  @angular-devkit/build-angular@0.12.1 --force     
       
-      # - run:
-      #     name: Install Front end Dependencies
-      #     command: |
-      #       npm run frontend:install
-      # - run:
-      #     name:  Front end build
-      #     command: |
-      #       npm run frontend:build 
-      # - run:
-      #     name: Deploy Front end Dependencies
-      #     command: |
-      #       npm run frontend:deploy                 
+      - run:
+          name: Install Front end Dependencies
+          command: |
+            npm run frontend:install
+      - run:
+          name:  Front end build
+          command: |
+            npm run frontend:build 
+      - run:
+          name: Deploy Front end Dependencies
+          command: |
+            npm run frontend:deploy                 
 
 
 
