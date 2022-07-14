@@ -29,10 +29,10 @@ jobs:
 
 
 
-      # - run:
-      #     name: Install angular cli
-      #     command: |
-      #       npm install -g @angular/cli@latest
+      - run:
+          name: Install angular cli
+          command: |
+            npm install -g @angular/cli@latest
       
       - run:
           name: Install Front end Dependencies
