@@ -15,9 +15,6 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
-       dependencies:
-         pre:
-      - npm install angular-cli@latest -g
       # - run:
       #     name: Install API Dependencies
       #     command: |
