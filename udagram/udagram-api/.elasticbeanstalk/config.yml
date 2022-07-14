@@ -1,9 +1,9 @@
 branch-defaults:
   default:
-    environment: Projectenvv-env
+    environment: Projectfinal-env
     group_suffix: null
 global:
-  application_name: project-envv
+  application_name: projectfinal
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 16 running on 64bit Amazon Linux 2
