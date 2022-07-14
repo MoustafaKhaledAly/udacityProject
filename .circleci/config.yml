@@ -49,9 +49,9 @@ jobs:
           command: |
             npm run frontend:build 
       - run:
-          name: Install Front end Dependencies
+          name: Deploy Front end Dependencies
           command: |
-            npm run frontend:build                 
+            npm run frontend:deploy                 
 
 
 
