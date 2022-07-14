@@ -44,6 +44,11 @@ jobs:
           name: API Build
           command: |
             npm run api:build
+      - run:
+          name: Deploy App
+          # TODO: Install, build, deploy in both apps
+          command: |
+            npm run api:deploy      
 
   # deploy step will run only after manual approval
   deploy:
@@ -56,11 +61,11 @@ jobs:
       - eb/setup
       - aws-cli/setup
       - checkout
-      - run:
-          name: Deploy App
-          # TODO: Install, build, deploy in both apps
-          command: |
-            npm run api:deploy
+      # - run:
+      #     name: Deploy App
+      #     # TODO: Install, build, deploy in both apps
+      #     command: |
+      #       npm run api:deploy
             
 # workflows:
 #   udagram:
