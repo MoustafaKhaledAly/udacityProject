@@ -4,7 +4,7 @@
 
 * [Project Description](#ProjectDescription)
 * [Usage](#Usage)
-* [EndPoints](#EndPoints)
+* [URLs](#URLs)
 * [Setup](#Setup)
 * [CircleCI](#CircleCI)
 
@@ -20,10 +20,10 @@ All the features that are implemented in this project work across modern environ
 
 
 
-## EndPoints
+## URLs 
 
-Front-end point :http://projectudacityfinal.s3-website-us-east-1.amazonaws.com/home
-Back-end point  :http://projectfinal-env.eba-jsn6cp5d.us-east-1.elasticbeanstalk.com/
+Front-end point :http://udacityprojectbuckett.s3-website-us-east-1.amazonaws.com/home
+Back-end point  :http://projectfinal-env.eba-93qzt3mj.us-east-1.elasticbeanstalk.com/
 
 
 ## Setup
