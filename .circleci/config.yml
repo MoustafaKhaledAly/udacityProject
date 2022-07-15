@@ -8,11 +8,6 @@ orbs:
 
  
 jobs:
-  build:
-    filters:
-      branches:
-        only:
-          - main 
     docker:
       # - image: "cimg/base:stable"
       - image: cimg/node:12.16
