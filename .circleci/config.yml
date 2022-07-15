@@ -5,6 +5,13 @@ orbs:
   python: circleci/python@2.0.3
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
+workflows:
+  udagram:
+    jobs:
+      filters:
+        branches:
+          only:
+            - main  
 jobs:
   build:
     docker:
@@ -41,13 +48,7 @@ jobs:
           name: Deploy Front end Dependencies
           command: |
             npm run frontend:deploy
-workflows:
-  udagram:
-    jobs:
-      filters:
-        branches:
-          only:
-            - main             
+             
                               
 
 
