@@ -9,7 +9,7 @@ jobs:
   build:
     branches:
         only:
-        - main
+          - main
     docker:
       # - image: "cimg/base:stable"
       - image: cimg/node:12.16
