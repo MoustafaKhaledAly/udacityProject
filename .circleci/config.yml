@@ -35,7 +35,7 @@ jobs:
       - run:
           name: Set EB environment variables
           command: |
-            cd udagram/udagram-api && eb setenv POSTGRES_DB=<< parameters.postgres_DB >>
+            echo "cd udagram/udagram-api && eb setenv POSTGRES_DB=<< parameters.postgres_DB >>"
       
       - run:
           name: Install Front end Dependencies
