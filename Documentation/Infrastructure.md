@@ -1,4 +1,4 @@
 # Infrastructure description
 
-The project is built based on angular framework  and node.js and the repo consists of two packages (front-end and back-end)
-
+The project utilizes AWS servieces such as AWS EB,AWS RDS and AWS EB .
+The pipeline is made by circleci
