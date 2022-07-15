@@ -47,9 +47,9 @@ workflows:
   udagram:
     jobs:
       - build
-          branches:
-            only:
-              - main          
+        branches:
+          only:
+            - main          
              
                               
 
