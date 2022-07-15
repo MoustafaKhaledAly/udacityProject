@@ -22,7 +22,7 @@ All the features that are implemented in this project work across modern environ
 
 ## URLs 
 
-Front-end point :http://udacityprojectbuckett.s3-website-us-east-1.amazonaws.com/home
+Front-end URL :http://udacityprojectbuckett.s3-website-us-east-1.amazonaws.com/
 Back-end point  :http://projectfinal-env.eba-93qzt3mj.us-east-1.elasticbeanstalk.com/
 
 
