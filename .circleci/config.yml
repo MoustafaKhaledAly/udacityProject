@@ -27,7 +27,7 @@ jobs:
             npm run api:build      
       - run:
           name: Deploy App
-          command: |
+          command: |  
             npm run api:deploy   
       
       - run:
@@ -46,7 +46,6 @@ workflows:
   udagram:
     jobs:
       - build
-      - hold:
           filters:
             branches:
               only:
