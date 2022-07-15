@@ -5,15 +5,14 @@ orbs:
   python: circleci/python@2.0.3
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
-workflows:
-  udagram:
-    jobs:
-      filters:
-        branches:
-          only:
-            - main  
+
+ 
 jobs:
   build:
+    filters:
+        branches:
+          only:
+            - main 
     docker:
       # - image: "cimg/base:stable"
       - image: cimg/node:12.16
