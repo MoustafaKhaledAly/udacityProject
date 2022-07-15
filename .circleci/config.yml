@@ -41,6 +41,14 @@ jobs:
           name: Deploy Front end Dependencies
           command: |
             npm run frontend:deploy
+workflows:
+  udagram:
+    jobs:
+      - build
+        filters:
+          branches:
+            only:
+              - main             
                               
 
 
