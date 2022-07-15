@@ -5,9 +5,8 @@ orbs:
   python: circleci/python@2.0.3
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
-
- 
 jobs:
+  build:
     docker:
       # - image: "cimg/base:stable"
       - image: cimg/node:12.16
@@ -41,10 +40,7 @@ jobs:
       - run:
           name: Deploy Front end Dependencies
           command: |
-            npm run frontend:deploy
-            
-             
-                              
+            npm run frontend:deploy                 
 
 
 
