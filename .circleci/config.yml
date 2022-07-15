@@ -8,7 +8,6 @@ orbs:
 
  
 jobs:
-  build:
     docker:
       # - image: "cimg/base:stable"
       - image: cimg/node:12.16
@@ -28,7 +27,7 @@ jobs:
             npm run api:build      
       - run:
           name: Deploy App
-          command: |  
+          command: |
             npm run api:deploy   
       
       - run:
@@ -43,13 +42,7 @@ jobs:
           name: Deploy Front end Dependencies
           command: |
             npm run frontend:deploy
-workflows:
-  udagram:
-    jobs:
-      - build
-          branches:
-            only:
-              - master          
+            
              
                               
 
